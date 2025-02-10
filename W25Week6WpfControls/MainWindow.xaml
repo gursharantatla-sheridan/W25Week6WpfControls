@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        <Image Height="110" Canvas.Left="67" Canvas.Top="52" Width="168"/>
+        <Image Height="110" Canvas.Left="67" Canvas.Top="52" Width="184" Source="/Car.png" HorizontalAlignment="Left" VerticalAlignment="Center" />
 
     </Canvas>
 </Window>

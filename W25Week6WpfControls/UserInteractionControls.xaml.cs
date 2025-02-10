@@ -70,5 +70,10 @@ namespace W25Week6WpfControls
             else
                 lblOutput.Content = "Please select a car";
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

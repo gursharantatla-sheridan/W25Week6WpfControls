@@ -40,6 +40,20 @@
             <ListBoxItem Content="Manitoba"/>
             <ListBoxItem Content="Alberta"/>
         </ListBox>
+        <Menu Height="29" Width="800" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="New"/>
+                <MenuItem Header="Open"/>
+                <MenuItem Header="Save"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Cut"/>
+                <MenuItem Header="Copy"/>
+                <MenuItem Header="Paste"/>
+            </MenuItem>
+        </Menu>
 
     </Canvas>
 </Window>

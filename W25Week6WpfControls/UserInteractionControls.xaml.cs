@@ -53,5 +53,22 @@ namespace W25Week6WpfControls
 
             lblOutput.Content = "Gender = " + gender;
         }
+
+        private void btnGetCar_Click(object sender, RoutedEventArgs e)
+        {
+            if (cmbCar.SelectedItem != null)
+                lblOutput.Content = cmbCar.Text;
+            else
+                lblOutput.Content = "Please select a car";
+        }
+
+        private void cmbCar_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbCar.SelectedItem != null)
+                //lblOutput.Content = cmbCar.Text;
+                lblOutput.Content = ((ComboBoxItem)cmbCar.SelectedItem).Content;
+            else
+                lblOutput.Content = "Please select a car";
+        }
     }
 }

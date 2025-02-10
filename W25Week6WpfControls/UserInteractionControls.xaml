@@ -17,7 +17,7 @@
         </GroupBox>
         <Label x:Name="lblOutput" Canvas.Left="571" Canvas.Top="291" Height="103" Width="191" Background="#FFC0FCFA"/>
         <Button x:Name="btnGetCities" Content="Get Cities" Canvas.Left="187" Canvas.Top="47" Height="42" Width="110" Click="btnGetCities_Click"/>
-        <GroupBox Height="136" Header="Gender" Width="147" Canvas.Left="35" Canvas.Top="206" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <GroupBox Height="136" Header="Gender" Width="147" Canvas.Left="35" Canvas.Top="185" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Canvas>
                 <RadioButton x:Name="rdoFemale" Content="Female" Canvas.Left="10" Canvas.Top="10"/>
                 <RadioButton x:Name="rdoMale" Content="Male" Canvas.Left="10" Canvas.Top="38" HorizontalAlignment="Center" VerticalAlignment="Top"/>
@@ -25,7 +25,21 @@
 
             </Canvas>
         </GroupBox>
-        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="187" Canvas.Top="217" Height="42" Width="110" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnGetGender_Click"/>
+        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="187" Canvas.Top="196" Height="42" Width="110" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnGetGender_Click"/>
+        <Label Content="Car" Canvas.Left="35" Canvas.Top="342"/>
+        <ComboBox x:Name="cmbCar" Canvas.Left="72" Canvas.Top="346" Width="120" SelectionChanged="cmbCar_SelectionChanged">
+            <ComboBoxItem Content="Honda"/>
+            <ComboBoxItem Content="Toyota"/>
+            <ComboBoxItem Content="Mazda"/>
+            <ComboBoxItem Content="Ford"/>
+        </ComboBox>
+        <Button x:Name="btnGetCar" Content="Get Car" Canvas.Left="197" Canvas.Top="347" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Click="btnGetCar_Click"/>
+        <ListBox Height="170" Width="132" Canvas.Left="376" Canvas.Top="47" SelectionMode="Extended">
+            <ListBoxItem Content="Ontario"/>
+            <ListBoxItem Content="Quebec"/>
+            <ListBoxItem Content="Manitoba"/>
+            <ListBoxItem Content="Alberta"/>
+        </ListBox>
 
     </Canvas>
 </Window>

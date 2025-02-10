@@ -23,5 +23,35 @@ namespace W25Week6WpfControls
         {
             InitializeComponent();
         }
+
+        private void btnGetCities_Click(object sender, RoutedEventArgs e)
+        {
+            string cities = "";
+
+            if (chkToronto.IsChecked == true)
+                cities += chkToronto.Content + "\n";
+            if (chkParis.IsChecked == true)
+                cities += chkParis.Content + "\n";
+            if (chkTokyo.IsChecked == true)
+                cities += chkTokyo.Content + "\n";
+            if (chkSydney.IsChecked == true)
+                cities += chkSydney.Content + "\n";
+
+            lblOutput.Content = cities;
+        }
+
+        private void btnGetGender_Click(object sender, RoutedEventArgs e)
+        {
+            string gender = "";
+
+            if (rdoFemale.IsChecked == true)
+                gender = rdoFemale.Content.ToString();
+            else if (rdoMale.IsChecked == true)
+                gender = rdoMale.Content.ToString();
+            else if (rdoOther.IsChecked == true)
+                gender = rdoOther.Content.ToString();
+
+            lblOutput.Content = "Gender = " + gender;
+        }
     }
 }

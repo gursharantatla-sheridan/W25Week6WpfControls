@@ -16,7 +16,16 @@
             </Canvas>
         </GroupBox>
         <Label x:Name="lblOutput" Canvas.Left="571" Canvas.Top="291" Height="103" Width="191" Background="#FFC0FCFA"/>
-        <Button x:Name="btnGetCities" Content="Get Cities" Canvas.Left="187" Canvas.Top="47" Height="42" Width="110"/>
+        <Button x:Name="btnGetCities" Content="Get Cities" Canvas.Left="187" Canvas.Top="47" Height="42" Width="110" Click="btnGetCities_Click"/>
+        <GroupBox Height="136" Header="Gender" Width="147" Canvas.Left="35" Canvas.Top="206" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Canvas>
+                <RadioButton x:Name="rdoFemale" Content="Female" Canvas.Left="10" Canvas.Top="10"/>
+                <RadioButton x:Name="rdoMale" Content="Male" Canvas.Left="10" Canvas.Top="38" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <RadioButton x:Name="rdoOther" Content="Other" Canvas.Left="10" Canvas.Top="67" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+            </Canvas>
+        </GroupBox>
+        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="187" Canvas.Top="217" Height="42" Width="110" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnGetGender_Click"/>
 
     </Canvas>
 </Window>

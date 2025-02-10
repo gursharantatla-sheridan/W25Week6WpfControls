@@ -8,6 +8,17 @@
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
         <Image Height="110" Canvas.Left="67" Canvas.Top="52" Width="184" Source="/Car.png" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <GroupBox Height="156" Header="Gender" Width="260" Canvas.Left="400" Canvas.Top="33">
+            <StackPanel>
+                <RadioButton Content="RadioButton"/>
+                <RadioButton Content="RadioButton"/>
+                <RadioButton Content="RadioButton"/>
 
+            </StackPanel>
+        </GroupBox>
+        <UniformGrid Height="140" Width="198" Canvas.Left="282" Canvas.Top="241" Background="#FFF4E4BA">
+            <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </UniformGrid>
     </Canvas>
 </Window>
